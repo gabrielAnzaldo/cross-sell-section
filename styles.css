@@ -1,0 +1,8 @@
+/* basic css reset will go here */
+
+/* choose a mobile first approach */
+/* MOBILE */
+/* wider devices than mobile */
+@media (min-width: 600px) {
+  /* TABLET / DESKTOP */
+}
