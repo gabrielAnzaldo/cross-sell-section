@@ -95,4 +95,30 @@ h2 {
 /* wider devices than mobile */
 @media (min-width: 600px) {
   /* TABLET / DESKTOP */
+  img {
+    height: 355px;
+  }
+  .product-grid {
+    padding: 80px 128px;
+  }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section-body {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
+  .product-card {
+    flex-basis: 355px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  .section-header a {
+    display: inline;
+  }
+  .product-card {
+    padding-right: 12px;
+  }
 }
