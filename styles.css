@@ -70,6 +70,7 @@ h2 {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.32px;
+  z-index: 1;
 }
 
 .badge.primary {
@@ -83,7 +84,7 @@ h2 {
   background-color: #5c7962;
   color: white;
   top: 4px;
-  right: 4px;
+  right: 5%;
 }
 .product-card .price {
   font-size: 16px;
@@ -114,12 +115,33 @@ h2 {
 .image-container:hover .secondary-image {
   opacity: 1;
 }
-
+.hidden-on-mobile {
+  display: none;
+}
+.cta-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.show-more-cta {
+  border-radius: 100px;
+  background: #1c1d1d;
+  color: white;
+  padding: 16px 24px;
+  width: 90%;
+}
 /* wider devices than mobile */
 @media (min-width: 600px) {
   /* TABLET / DESKTOP */
   img {
     height: 355px;
+  }
+  .hidden-on-mobile {
+    display: block;
+  }
+  .cta-container {
+    display: none;
   }
   .product-grid {
     padding: 80px 128px;
